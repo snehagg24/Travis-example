@@ -1,2 +1,6 @@
 arch: amd64
 os: linux
+
+script:
+  - echo "Travis CI"
+  - arch
