@@ -1,16 +1,16 @@
-#language: python
-#python:
-#  - "2.7"
-sudo: required
-language: bash
+language: python
+python:
+  - "2.7"
+#sudo: required
+#language: bash
 arch: ppc64le
 os: linux
 
 before_install: 
   - sudo apt update
 
-install:
-  - sudo apt install ansible
+#install:
+#  - sudo apt install ansible
 
 script:
-  - ansible-playbook HelloWorld.yml
+  - python ocp_connect.py
