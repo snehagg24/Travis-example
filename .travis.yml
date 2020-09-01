@@ -1,8 +1,11 @@
-language: python
-python:
-  - "2.7"
+#language: python
+#python:
+#  - "2.7"
+language: bash
 arch: ppc64le
 os: linux
 
 script:
-  - cd ansible && ansible --version
+  - sudo apt update
+  - sudo apt install ansible
+  - ansible --version
